@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <meta name="theme-color" content="#101827">
+  <title>PHONE TYCOON — Перепродажа смартфонов</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="phone">
+    <div class="notch"></div>
+    <header class="status"><span id="clock">09:41</span><span id="cityStatus">Москва</span><span>● 4G ▰</span></header>
+    <section id="lock" class="lock-screen">
+      <div class="lock-date" id="lockDate"></div><div class="lock-time" id="lockTime">09:41</div>
+      <div class="lock-bottom">Проведите вверх, чтобы открыть</div>
+      <button id="unlock" class="unlock">Открыть телефон</button>
+    </section>
+    <section id="home" class="home-screen hidden">
+      <div class="home-widget"><div><small>PHONE TYCOON</small><h2 id="homeBalance">50 000 ₽</h2><span id="homeCity">Москва · Предприниматель</span></div><div class="widget-weather">☀️<br><small>Бизнес идёт</small></div></div>
+      <div class="app-grid" id="appGrid"></div>
+      <div class="dock"><button data-app="market">🛍️<small>Рынок</small></button><button data-app="bank">💳<small>Банк</small></button><button data-app="inventory">📱<small>Телефоны</small></button><button data-app="messages">💬<small>Чаты</small></button></div>
+    </section>
+    <section id="appView" class="app-view hidden">
+      <div class="app-header"><button id="backHome" aria-label="На главный экран">⌂</button><div><b id="appTitle">Приложение</b><small id="appSubtitle"></small></div><button id="appMore">•••</button></div>
+      <div id="appContent" class="app-content"></div>
+    </section>
+    <nav class="bottom-nav"><button id="navHome">●</button><div class="nav-pill"></div><button id="navBack">‹</button></nav>
+  </main>
+  <div id="toast" class="toast"></div>
+  <div id="modal" class="modal hidden"><div class="modal-card"><button class="modal-x" id="modalX">×</button><div id="modalBody"></div></div></div>
+  <script src="database.js"></script><script src="script.js"></script>
+</body>
+</html>
