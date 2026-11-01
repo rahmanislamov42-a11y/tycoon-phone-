@@ -2,7 +2,7 @@
 :root{--bg:#eef2f8;--surface:#fff;--text:#172033;--muted:#718096;--line:#e6ebf2;--blue:#2878f0;--blue2:#155bd6;--green:#16a36a;--red:#dc4d5b;--shadow:0 18px 55px #17203325}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;display:grid;place-items:center;background:radial-gradient(circle at 20% 10%,#334b72,#101827 60%);font-family:Inter,system-ui,sans-serif;color:var(--text)}
 .phone{width:min(430px,100vw);height:min(900px,100dvh);min-height:620px;background:var(--bg);border:7px solid #0b1019;border-radius:42px;overflow:hidden;position:relative;box-shadow:var(--shadow);display:flex;flex-direction:column}
-.notch{position:absolute;z-index:20;top:0;left:50%;transform:translateX(-50%);width:112px;height:22px;background:#0b1019;border-radius:0 0 15px 15px}
+.notch{display:none}
 .status{height:34px;flex-shrink:0;padding:7px 20px 0;display:flex;justify-content:space-between;font-size:11px;font-weight:700;z-index:5;color:var(--text)}
 .lock-screen{position:absolute;inset:0;z-index:10;background:linear-gradient(145deg,#132c50,#397ac5 55%,#8eb8e9);color:white;text-align:center;padding-top:22vh;display:flex;flex-direction:column;align-items:center}
 .lock-date{font-size:15px;opacity:.9}.lock-time{font-size:76px;font-weight:700;letter-spacing:-5px;margin:8px 0}.lock-bottom{position:absolute;bottom:125px;font-size:12px;opacity:.8}.unlock{position:absolute;bottom:55px;border:1px solid #ffffff80;color:white;background:#ffffff20;border-radius:24px;padding:13px 26px;font-weight:700}
@@ -25,3 +25,21 @@ input,select,textarea{width:100%;border:1px solid var(--line);border-radius:12px
 .app-view{animation:openApp .2s ease}
 body.dark{--bg:#111827;--surface:#1e293b;--text:#edf2f7;--muted:#9aa9bd;--line:#334155;--shadow:0 18px 55px #0008}.dark .dock{background:#1e293bcc}.dark .tabs button{background:#334155;color:#cbd5e1}.dark .chat-bubble{background:#334155}.dark .chat-bubble.me{background:#214a7d}.dark .stat{background:var(--surface)}.dark .tag{background:#263e60;color:#9dc4ff}
 @media(max-height:700px){.home-widget{padding:14px;margin:3px 0 13px}.app-grid{gap:13px 8px}.app-icon span{width:48px;height:48px}.lock-screen{padding-top:17vh}.lock-time{font-size:64px}}
+
+/* Обновлённый аккуратный интерфейс */
+.phone{border:0;border-radius:0;box-shadow:none;width:min(480px,100vw);height:100dvh;min-height:560px}
+.status{padding-top:max(8px,env(safe-area-inset-top));height:38px}
+.home-screen,.app-view{padding-left:18px;padding-right:18px}
+.home-widget{background:linear-gradient(135deg,#315de8,#7b8df5 65%,#9bafff);border-radius:26px;box-shadow:0 12px 30px #526fe633}
+.app-icon span{border-radius:19px;background:linear-gradient(145deg,#fff,#edf2fb);box-shadow:0 8px 18px #15243b13}
+.card{border-radius:20px;box-shadow:0 5px 18px #1a2b4510}
+.btn{border-radius:14px;min-height:40px}
+.phone-art.device-art{position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;color:#fff;background:linear-gradient(145deg,#1c2944,#596c91);border:4px solid #172033;border-radius:19px;box-shadow:inset 0 0 0 2px #ffffff55}
+.device-art:before{content:"";position:absolute;inset:5px;border:1px solid #ffffff55;border-radius:14px}
+.device-art span{width:28px;height:28px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#b9d7ff,#202b46 60%);border:3px solid #8b9ab4;box-shadow:22px 0 0 -7px #1d2b49,22px 0 0 -4px #aebbd0}
+.device-art small{font-size:7px;letter-spacing:1px;opacity:.8;z-index:1}
+.device-hero{width:100%!important;height:150px!important;font-size:40px!important;border-radius:22px!important}
+.profile-hero{text-align:center;background:linear-gradient(145deg,#f7f9ff,#e9efff)}
+.code-list{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px}
+.code-list div{font-size:10px;padding:8px;background:var(--bg);border-radius:8px;font-weight:700}
+@media(min-width:520px){.phone{height:min(920px,100dvh);border:8px solid #0b1019;border-radius:38px}.status{height:38px}}
