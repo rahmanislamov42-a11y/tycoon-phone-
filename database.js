@@ -14,7 +14,24 @@ const PHONE_DB = [
  {model:"Samsung Galaxy A34",brand:"Samsung",year:2023,base:15000,storage:["128 ГБ"],colors:["Чёрный","Серебристый"]},
  {model:"Xiaomi Redmi Note 12",brand:"Xiaomi",year:2023,base:10500,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Синий"]},
  {model:"Xiaomi Redmi Note 13",brand:"Xiaomi",year:2024,base:14000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Зелёный"]},
- {model:"Xiaomi 13T",brand:"Xiaomi",year:2023,base:25000,storage:["256 ГБ"],colors:["Чёрный","Зелёный"]}
+ {model:"Xiaomi 13T",brand:"Xiaomi",year:2023,base:25000,storage:["256 ГБ"],colors:["Чёрный","Зелёный"]},
+ {model:"POCO X6 Pro",brand:"POCO",year:2024,base:26000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Серый","Жёлтый"]},
+ {model:"POCO F6",brand:"POCO",year:2024,base:32000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Титановый"]},
+ {model:"POCO M6 Pro",brand:"POCO",year:2024,base:15000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Синий"]},
+ {model:"HONOR X8b",brand:"HONOR",year:2023,base:17000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Серебристый","Зелёный"]},
+ {model:"HONOR 90",brand:"HONOR",year:2023,base:26000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Зелёный"]},
+ {model:"HONOR 200",brand:"HONOR",year:2024,base:36000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Белый"]},
+ {model:"HONOR Magic6 Pro",brand:"HONOR",year:2024,base:65000,storage:["512 ГБ"],colors:["Чёрный","Зелёный"]},
+ {model:"HUAWEI nova 11",brand:"HUAWEI",year:2023,base:22000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Зелёный"]},
+ {model:"HUAWEI nova 12s",brand:"HUAWEI",year:2024,base:28000,storage:["256 ГБ"],colors:["Чёрный","Белый"]},
+ {model:"HUAWEI Pura 70",brand:"HUAWEI",year:2024,base:55000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Белый"]},
+ {model:"HUAWEI Mate 50 Pro",brand:"HUAWEI",year:2022,base:42000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Серебристый"]},
+ {model:"Samsung Galaxy S23",brand:"Samsung",year:2023,base:39000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Зелёный","Лаванда"]},
+ {model:"Samsung Galaxy S24",brand:"Samsung",year:2024,base:52000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Серый","Фиолетовый"]},
+ {model:"Samsung Galaxy A35",brand:"Samsung",year:2024,base:19000,storage:["128 ГБ","256 ГБ"],colors:["Чёрный","Синий"]},
+ {model:"Redmi Note 13 Pro",brand:"Xiaomi",year:2024,base:21000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Фиолетовый"]},
+ {model:"Xiaomi 14",brand:"Xiaomi",year:2024,base:57000,storage:["256 ГБ","512 ГБ"],colors:["Чёрный","Белый"]},
+ {model:"iPhone 16 Pro",brand:"Apple",year:2024,base:95000,storage:["128 ГБ","256 ГБ","512 ГБ"],colors:["Чёрный титан","Натуральный титан"]}
 ];
 const CITIES=["Москва","Санкт-Петербург","Казань","Екатеринбург","Новосибирск","Сочи","Краснодар","Нижний Новгород","Самара","Ростов-на-Дону"];
 const SELLERS=[
